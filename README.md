@@ -1,3 +1,6 @@
+### Credits : 
+IPhone Model -> Credits : <a href="https://skfb.ly/o7nDN">Apple iPhone 13 Pro Max</a> by DatSketch is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a>.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
