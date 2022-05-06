@@ -70,7 +70,7 @@
 .colors{
     /* background-color: #48dbfb; */
     height: 50px;
-    width: 50%;
+    width: 85%;
     overflow-x: scroll;
     display: flex;
     justify-content: flex-start;
@@ -129,4 +129,13 @@
     box-shadow: 2px 2px 2px black;
     font-size: 15px;
     
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
 }

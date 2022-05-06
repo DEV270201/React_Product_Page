@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 
+
 .navbar{
     height: 10vh;
     position : fixed;
-    background-color: #2f3640;
+    background-color: #1e272e;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@
 .navbar_head{
     color: white;
     font-weight: 400;
-    font-family: 'Lobster Two', cursive;
+	font-family: 'Prompt', sans-serif;
 }
 
 input[type=checkbox]{
@@ -50,7 +51,8 @@ label:after {
 }
 
 input:checked + label {
-	background: #bada55;
+	background: dodgerblue;
+
 }
 
 input:checked + label:after {
@@ -66,7 +68,7 @@ input:checked + label:after {
     width: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-right: 35px;
     /* background-color: #bada55; */
 }
@@ -78,5 +80,5 @@ input:checked + label:after {
 }
 
 .tog{
-	font-family: 'Lobster Two', cursive;
+	font-family: 'Prompt', sans-serif;
 }

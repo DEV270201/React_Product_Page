@@ -5,7 +5,7 @@ import Iphone from "../components/Iphone";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faIndianRupeeSign, faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faIndianRupeeSign, faQuoteLeft, faQuoteRight,faRocket } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { useMantineColorScheme } from "@mantine/core";
 
@@ -21,7 +21,7 @@ const Home = () => {
         color: "#C1C2C5",
         border : "#000"
     };
-    const colors = ['#2f3640', '#c8d6e5', '#7f8fa6'];
+    const colors = ['#2f3640', '#c8d6e5', '#7f8fa6','#d1d8e0'];
 
     return (
         <>
@@ -40,6 +40,16 @@ const Home = () => {
                                     </Suspense>
                                 </Canvas>
                             </div>
+                            <Center mt={10}>
+                                <div className="service" style={{color : theme.color,border : `1px solid ${theme.color}`}}>
+                                    <FontAwesomeIcon icon={faRocket}/>
+                                    <Text>Fast Delivery</Text>
+                                </div><Space w={"xs"}/>
+                                <div className="service" style={{color : theme.color,border : `1px solid ${theme.color}`}}>
+                                    <FontAwesomeIcon icon={faRocket}/>
+                                    <Text>Fast Delivery</Text>
+                                </div>
+                            </Center>
                         </Grid.Col>
                         <Grid.Col md={7} lg={5} className="right_col">
                             <Text size="xl" className="prod_head" style={{color : theme.color}}>Apple IPhone 13 Pro Max</Text>
@@ -65,7 +75,11 @@ const Home = () => {
                                 {
                                     colors.map((color) => {
                                         return (
-                                            <div className="color" key={color} style={{ backgroundColor: `${color}` }} onClick={() => setBack(color)}>
+                                            <div className="color" key={color} style={{ backgroundColor: `${color}` }} onClick={
+                                                () => {
+                                                    setBack(color);
+                                                    window.scrollTo({top:0,behavior:"smooth"});
+                                            }}>
                                             </div>
                                         )
                                     })
